@@ -20,7 +20,7 @@
 			+"TI_LOCA=?,\n"
 			+"TI_CRETIM=?,\n"
 			+"TI_CREDAT=?\n"
-			+"WHERE MI_NUM=?";
+			+"WHERE TI_NUM=?";
 	
 	PreparedStatement ps = con.prepareStatement(sql);
 	ps.setString(1, tiTit);

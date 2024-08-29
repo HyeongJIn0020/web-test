@@ -20,15 +20,15 @@ ResultSet rs = ps.executeQuery();
 
 if(rs.next()){
 %>
-<form action="/todo/todo-update-ok.jsp" method="POST" id=frm>
+<form action="/todo/todo-update-ok.jsp" method="POST" id="frm">
 	번호 : <%=rs.getString("TI_NUM") %><br>
 	제목 : <input type="text" name="tiTit" value="<%=rs.getString("TI_TIT")%>"><br>
 	내용 : <textarea name="tiMemo"><%=rs.getString("TI_MEMO")%></textarea><br>
 	위치 : <input type="text" name="tiLoca" value="<%=rs.getString("TI_LOCA")%>"><br>
 	시간 : <input type="text" name="tiTim" value="<%=rs.getString("TI_CRETIM")%>"><br>
 	일자 : <input type="text" name="tiDat" value="<%=rs.getString("TI_CREDAT")%>"><br>
-	<button>메뉴 수정</button>
-	<button type="button" onclick="changeAction(1)">메뉴 삭제</button>
+	<button>수정</button>
+	<button type="button" onclick="changeAction(1)">삭제</button>
 </form>
 <script>
 function changeAction(){

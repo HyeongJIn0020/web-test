@@ -25,7 +25,7 @@ PreparedStatement ps = con.prepareStatement(sql);
 ResultSet rs = ps.executeQuery();
 while(rs.next()){
 	out.println("<tr>");
-	out.println("<td>"+rs.getString("TI_NUM")+"</td>");
+	out.println("<td>"+ rs.getString("TI_NUM") + "</td>");
 	out.println("<td><a href='/todo/todo-view.jsp?tiNum=" + rs.getString("TI_NUM") + "'>" + rs.getString("TI_TIT") + "</a></td>");
 	out.println("<td>" + rs.getString("TI_MEMO") + "</td>");
 	out.println("<td>" + rs.getString("TI_LOCA") + "</td>");
@@ -35,6 +35,6 @@ while(rs.next()){
 	}
 %>	
 </table>
-<button>할일 등록하기</button>
+<button onclick="location.href='/todo/todo-insert.jsp'">할일 등록하기</button>
 </body>
 </html>
