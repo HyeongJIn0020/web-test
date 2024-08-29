@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DBcon {
 	private final static String ID = "root";
 	private final static String PWD = "r1r2r3";
-	private final static String URL = "jdbc:mariadb://localhost:3306/ezen";
+	private final static String URL = "jdbc:mariadb://localhost:3307/ezen";
 	private final static String CLASS_NAME = "org.mariadb.jdbc.Driver";
 	
 	static {
