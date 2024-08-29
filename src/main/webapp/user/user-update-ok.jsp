@@ -14,7 +14,7 @@ Statement stmt = con.createStatement();
 String sql = "UPDATE user_info\r\n"
 		+ "SET UI_NAME='" + uiName + "',\r\n"
 		+ "UI_ID='" +uiId + "',\r\n"
-		+ "UI_PWD='" + uiPwd + "',\r\n"
+		+ "UI_PWD='" + uiPwd + "'\r\n"
 		+ "WHERE UI_NUM=" + uiNum;
 
 int result = stmt.executeUpdate(sql);
